@@ -1,0 +1,268 @@
+* {
+    border: none;
+    padding: 0;
+    margin: 0;
+    list-style-type: none;
+    text-decoration: none;
+}
+
+a{
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    font-family: 'Roboto';
+}
+
+
+/*modal styling*/
+
+
+.container{
+    /*min-height: 100vh;*/
+    border-bottom: thin transparent solid;
+    border-top: thin transparent solid;
+    overflow: hidden;
+    padding-top:2em;
+}
+/*.container:nth-child(odd){
+    background-color: rgba(255,0,0,0.1);
+}*/
+
+h1{
+    text-align: center;
+    
+    text-transform: uppercase;
+}
+
+.header {
+    text-align: center;
+}
+
+
+/*Section bg color*/
+
+.section1 {
+    background-color: #E8E4D7;
+    width: 100%;
+    height: 100vh;
+}
+
+.section2 {
+    background-color: #2E308A;
+    width: 100%;
+    height: 100vh;
+}
+
+
+/*Navigation Bar*/
+
+.section {
+    position: relative;
+}
+
+.nav-list {
+  height: 100%;
+  width: 200px;
+  background-color: #fff;
+  display: inline-block;
+  position: fixed;
+  left: -250px;
+  top: 0;
+  transition: all;
+  transition-duration: 200ms;
+  padding-top: 5em;
+  z-index: 2
+}
+
+.nav-list>li{
+ /*   border: thin red solid;*/
+    margin-bottom: 2em;
+}
+
+.nav-list>li>a {
+  color: #E8E4D7;
+  display: block;
+  /*text-decoration: none;*/
+    margin: 0;
+    padding-left: 2em;
+
+
+/*  padding: 10px 15px;*/
+}
+.nav-list>li:first-child {
+  margin-top: 2em;
+/*  padding: 10px 15px;*/
+}
+.nav-list>li>a:hover {
+  background: #FF5252;
+}
+
+.fa-bars {
+  display: block;
+  position: fixed;
+  top: 35px;
+  left: 35px;
+  z-index: 5;
+  color: #2A2B7E;
+  font-size: 2em;
+}
+        
+.transition {
+  left: 0 !important;
+}
+
+.nav-item{
+    transition: all ease 0.5s;
+    border-bottom: 0.3em transparent solid;
+}
+
+.nav-item>a {
+    margin-left: 8%;
+    font-size: 1.1em;
+    letter-spacing: 0.03em;
+}
+
+.nav-item.active{
+    height: 1.3em;
+    background-color: #fff;
+    /*padding: 1em 0;*/
+    width: 100%;
+}
+
+.nav-item.active>a{
+    color: #2D49D2;
+}
+
+/*SNS*/
+.snsWrapper {
+    position: fixed;
+    display: block;
+    top: 35px;
+    right: 35px;
+    font-size: 2em;
+}
+
+.snsWrapper>a{
+    color: #2E308B;
+}
+
+/*Button*/
+.contact {
+    background-color: #FEDD00;
+    position: fixed;
+    display: block;
+    bottom: 35px;
+    left: 35px;
+    /*width: 5em;
+    height: 2em;*/
+    font-size: 1em;
+    color: #333996;
+    padding: 1em;
+    font-weight: bolder;
+    z-index: 12;
+}
+
+/*section1*/
+
+.section1 .text {
+  width: 100%;
+  text-align: center;
+  height: 100px;
+  line-height: 50px;
+  font-size: 30px;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+  /*border: thin white solid;*/
+}
+
+.section1 .text h5 {
+    font-size: 0.7em;
+    color: #fff;
+    font-weight: lighter;
+}
+
+.section1 .text .content {
+  display: inline;
+  color: #2A2B7E;
+  font-weight: bolder;
+  font-size: 1.5em;
+}
+.section1 .text .dash {
+  display: inline-block;
+  height: 3px;
+  width: 20px;
+  background-color: #FDDB00;
+  animation: blink .5s infinite linear;
+}
+
+@keyframes blink {
+  0% {
+    opacity: 1;
+  }
+  99% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.section2>.conWrapper {
+    border: thin white solid;
+/*    width: 50vw;
+    height: 50vw;*/
+}
+
+/*@import url(https://fonts.googleapis.com/css?family=Lato:300,400,700);*/
+/*body {
+  color: #222;
+  font-family: 'Lato';
+}*/
+
+.section2>.container {
+  padding: 50px;
+  text-align: center;
+}
+
+.section2>.container>.chart {
+  position: relative;
+  display: inline-block;
+  margin: 20px 10px;
+  color: #999;
+  font-size: 16px;
+  font-weight: 400;
+  text-transform: uppercase;
+  text-align: center;
+}
+.section2>.container>.chart canvas {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+
+/*All devices and mobile phone*/
+
+
+/*for small tablet - inclusive*/
+
+@media only screen and (min-width : 40em) {
+
+}
+/*for tablet - inclusive*/
+
+@media only screen and (min-width : 60em) {
+
+}
+
+
+/*for destop - inclusive*/
+
+@media only screen and (min-width : 80em) {
+  
+
+}
